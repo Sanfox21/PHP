@@ -1,0 +1,281 @@
+#centrar{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#corazon{
+    background-color: rgb(255, 0, 0);
+    height: 320px;
+    width: 320px;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px rgb(255, 0, 0);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#corazon:hover{
+    animation: corazon 0.6s linear infinite;
+}
+
+@keyframes corazon{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+
+
+#corazon::before{
+    content: '';
+    background-color: rgb(255, 0, 0);
+    height: 320px;
+    width: 320px;
+    position: absolute;
+    top: -50%;
+    border-radius: 300px;
+    box-shadow: -10px 10px 100px rgb(255, 0, 0);
+}
+
+#corazon::after{
+    content: '';
+    background-color: rgb(255, 0, 0);
+    height: 320px;
+    width: 320px;
+    position: absolute;
+    right: -50%;
+    border-radius: 300px;
+    box-shadow: -10px 10px 100px rgb(255, 0, 0);
+}
+
+
+
+#Carta{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    box-shadow: -10px 10px 100px rgb(255, 254, 254);
+    transform: rotate(-45deg);
+    
+}
+
+#Carta:hover{
+    animation: corazon 0.6s linear infinite;
+}
+
+#Carta::before{
+    content: '';
+    background-color:  rgb(255, 254, 254);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 100px  rgb(255, 254, 254);;
+}
+
+#Carta::after{
+    content: '';
+    background-color:  rgb(255, 254, 254);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 100px rgb(255, 254, 254);
+}
+
+#Texto{
+    position: absolute;
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+
+
+#modal{
+    max-width: 100ch;
+    max-height: 87ch;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px rgb(201, 0, 0) solid;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 229, 229);
+    justify-content: center;
+    align-items: center;
+    animation: hola 0.6s;
+}
+
+#modal h2{
+    animation: hola2 2.5s;
+}
+
+#modal h3{
+    animation: hola2 5s;
+}
+
+
+
+@keyframes hola{
+    0% { opacity: 0; top: 500px;}
+    100% { opacity: 1; top: 0px}
+}
+
+
+
+
+
+
+
+#modal button{
+    margin-top: 10%;
+    width: 70px;
+    height: 30px;
+    color: white
+}
+
+#modal h2{
+    margin-bottom: 25px;
+}
+
+
+
+
+#abajo{
+    height: 100px;
+    display: flex;
+}
+
+#corazon2{
+    background-color: rgb(255, 0, 0);
+    height: 30px;
+    width: 30px;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px rgb(255, 0, 0);
+    
+    display: flex;
+    margin: 50px;
+    margin-left: 60px;
+    animation: corazon2 0.6s linear infinite;
+    animation: subida_corazones2 0.9s linear infinite
+}
+
+
+
+@keyframes corazon2{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+
+
+#corazon2::before{
+    content: '';
+    background-color: rgb(255, 0, 0);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -50%;
+    border-radius: 300px;
+    box-shadow: -10px 10px 100px rgb(255, 0, 0);
+}
+
+#corazon2::after{
+    content: '';
+    background-color: rgb(255, 0, 0);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: -50%;
+    border-radius: 300px;
+    box-shadow: -10px 10px 100px rgb(255, 0, 0);
+}
+
+
+#corazon3{
+    background-color: rgb(255, 0, 0);
+    height: 30px;
+    width: 30px;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px rgb(255, 0, 0);
+    
+    display: flex;
+    margin: 50px;
+    animation: corazon2 0.6s linear infinite;
+    animation: subida_corazones1 1.2s linear infinite;
+}
+
+
+
+@keyframes corazon3{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+
+
+#corazon3::before{
+    content: '';
+    background-color: rgb(255, 0, 0);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -50%;
+    border-radius: 300px;
+    box-shadow: -10px 10px 100px rgb(255, 0, 0);
+}
+
+#corazon3::after{
+    content: '';
+    background-color: rgb(255, 0, 0);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: -50%;
+    border-radius: 300px;
+    box-shadow: -10px 10px 100px rgb(255, 0, 0);
+}
+
+@keyframes subida_corazones1{
+    0% { opacity: 1; top: 0px;}
+    50% { opacity: 0.5; top: -150px}
+    100% { opacity: 0; top: -250px}
+}
+
+@keyframes subida_corazones2{
+    0% { opacity: 1; top: 0px;}
+    50% { opacity: 0.5; top: -150px}
+    100% { opacity: 0; top: -250px}
+}
+
